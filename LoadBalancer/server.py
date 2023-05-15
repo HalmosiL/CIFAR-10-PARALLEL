@@ -1,9 +1,15 @@
 import os
 import pickle
 import glob 
+import sys
+import json
 
 from sanic import Sanic, response, exceptions
 from generateJobs import generateJobs_asynk, generateJobs_synk,getTrainset
+
+CONFIG = json.load(open(sys.argv[1]))
+
+PORT = CONFIG["PORT"]
 
 EPOCH_COUNTER = 0
 TIME_STAMP = 0
@@ -236,4 +242,4 @@ if __name__ == "__main__":
     )
 
     clearDataSet()
-    app.run(host="127.0.0.1", port=3000)
+    app.run(host="127.0.0.1", port=PORT)
