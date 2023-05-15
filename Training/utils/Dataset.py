@@ -76,7 +76,7 @@ class ClientDataset:
         return None, "Epoch Finished"
 
 if __name__ == "__main__":
-    clientDataset = ClientDataset("http://127.0.0.1:8000")
+    clientDataset = ClientDataset("http://127.0.0.1:3000")
 
     start_time = time.time()
     cout = 0
