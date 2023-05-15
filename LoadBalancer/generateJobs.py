@@ -63,7 +63,7 @@ def generateJobs_asynk(BATCH_SIZE_TRAIN, NOM_WORKERS_TRAIN, SAVE_PATH):
 
 if __name__ == "__main__":
     JOBS_PATH = "../Stack/JobStack2/"
-    BATCH_SIZE_TRAIN = 512
+    BATCH_SIZE_TRAIN = 128
     NOM_WORKERS_TRAIN = 4
 
     print("ok")
