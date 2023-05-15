@@ -17,7 +17,7 @@ CONFIG = json.load(open(sys.argv[1]))
 MODEL_ID = None
 
 DEVICE = CONFIG["DEVICE"]
-PORT = CONFIG["PORT"]
+HOST = CONFIG["DATA-LOADER-HOST"]
 
 def clearModelCache(model_list):
     if(len(model_list) > 2):
@@ -88,16 +88,16 @@ if __name__ == "__main__":
     clearModelCache(model_list)
 
     while True:
-        obj = load_pickle_file(f"http://127.0.0.1:{PORT}/getJob")
-        id_ = getModelID(f"http://127.0.0.1:{PORT}/getModelID")
+        obj = load_pickle_file(f"{HOST}/getJob")
+        id_ = getModelID(f"{HOST}/getModelID")
 
         if MODEL_ID is not None:
             if(MODEL_ID < id_):
                 MODEL_ID = id_
-                MODEL = getModel(f"http://127.0.0.1:{PORT}/getModel", MODEL)
+                MODEL = getModel(f"{HOST}/getModel", MODEL)
         else:
             MODEL_ID = id_
-            MODEL = getModel(f"http://127.0.0.1:{PORT}/getModel", MODEL)
+            MODEL = getModel(f"{HOST}/getModel", MODEL)
 
         if(MODEL is not None):
             MODEL = MODEL.to(DEVICE)
@@ -116,7 +116,7 @@ if __name__ == "__main__":
                         iterationNumber=10
                     )
 
-                    upload_pickle_file(f"http://127.0.0.1:{PORT}/uploadJob", obj)
+                    upload_pickle_file(f"{HOST}/uploadJob", obj)
             else:
                 print("Finished")
         else:
