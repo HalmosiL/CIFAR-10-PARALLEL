@@ -82,16 +82,16 @@ if __name__ == "__main__":
     clearModelCache(model_list)
 
     while True:
-        obj = load_pickle_file("http://127.0.0.1:8000/getJob")
-        id_ = getModelID("http://127.0.0.1:8000/getModelID")
+        obj = load_pickle_file("http://127.0.0.1:3000/getJob")
+        id_ = getModelID("http://127.0.0.1:3000/getModelID")
 
         if MODEL_ID is not None:
             if(MODEL_ID < id_):
                 MODEL_ID = id_
-                MODEL = getModel("http://127.0.0.1:8000/getModel", MODEL)
+                MODEL = getModel("http://127.0.0.1:3000/getModel", MODEL)
         else:
             MODEL_ID = id_
-            MODEL = getModel("http://127.0.0.1:8000/getModel", MODEL)
+            MODEL = getModel("http://127.0.0.1:3000/getModel", MODEL)
 
         if(MODEL is not None):
             MODEL = MODEL.to(DEVICE)
@@ -110,7 +110,7 @@ if __name__ == "__main__":
                         iterationNumber=10
                     )
 
-                    upload_pickle_file("http://127.0.0.1:8000/uploadJob", obj)
+                    upload_pickle_file("http://127.0.0.1:3000/uploadJob", obj)
             else:
                 print("Finished")
         else:
