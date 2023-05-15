@@ -1,0 +1,158 @@
+2023-04-24 15:31:55,807 INFO    StreamThr :46936 [internal.py:wandb_internal():87] W&B internal server running at pid: 46936, started at: 2023-04-24 15:31:55.807064
+2023-04-24 15:31:55,809 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status
+2023-04-24 15:31:55,810 INFO    WriterThread:46936 [datastore.py:open_for_write():85] open: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/run-tv72cnbv.wandb
+2023-04-24 15:31:55,811 DEBUG   SenderThread:46936 [sender.py:send():336] send: header
+2023-04-24 15:31:55,811 DEBUG   SenderThread:46936 [sender.py:send():336] send: run
+2023-04-24 15:31:56,363 INFO    SenderThread:46936 [dir_watcher.py:__init__():219] watching files in: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files
+2023-04-24 15:31:56,363 INFO    SenderThread:46936 [sender.py:_start_run_threads():1078] run started: tv72cnbv with start time 1682343115.806402
+2023-04-24 15:31:56,363 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:31:56,363 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:31:56,364 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: check_version
+2023-04-24 15:31:56,364 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: check_version
+2023-04-24 15:31:56,430 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: run_start
+2023-04-24 15:31:56,434 DEBUG   HandlerThread:46936 [system_info.py:__init__():31] System info init
+2023-04-24 15:31:56,434 DEBUG   HandlerThread:46936 [system_info.py:__init__():46] System info init done
+2023-04-24 15:31:56,434 INFO    HandlerThread:46936 [system_monitor.py:start():183] Starting system monitor
+2023-04-24 15:31:56,434 INFO    SystemMonitor:46936 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-24 15:31:56,434 INFO    HandlerThread:46936 [system_monitor.py:probe():204] Collecting system info
+2023-04-24 15:31:56,435 INFO    SystemMonitor:46936 [interfaces.py:start():187] Started cpu monitoring
+2023-04-24 15:31:56,436 INFO    SystemMonitor:46936 [interfaces.py:start():187] Started disk monitoring
+2023-04-24 15:31:56,436 INFO    SystemMonitor:46936 [interfaces.py:start():187] Started gpu monitoring
+2023-04-24 15:31:56,437 INFO    SystemMonitor:46936 [interfaces.py:start():187] Started memory monitoring
+2023-04-24 15:31:56,437 INFO    SystemMonitor:46936 [interfaces.py:start():187] Started network monitoring
+2023-04-24 15:31:56,446 DEBUG   HandlerThread:46936 [system_info.py:probe():195] Probing system
+2023-04-24 15:31:56,449 DEBUG   HandlerThread:46936 [git.py:repo():40] git repository is invalid
+2023-04-24 15:31:56,450 DEBUG   HandlerThread:46936 [system_info.py:probe():240] Probing system done
+2023-04-24 15:31:56,450 DEBUG   HandlerThread:46936 [system_monitor.py:probe():213] {'os': 'Linux-6.1.23-1-MANJARO-x86_64-with-glibc2.37', 'python': '3.9.0', 'heartbeatAt': '2023-04-24T13:31:56.446210', 'startedAt': '2023-04-24T13:31:55.803113', 'docker': None, 'cuda': None, 'args': ('../Configs/pgd.json',), 'state': 'running', 'program': '/home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/train.py', 'codePath': 'train.py', 'host': 'developer-systemproductname', 'username': 'developer', 'executable': '/home/developer/anaconda3/envs/pytorch/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2075.9438125, 'min': 1400.0, 'max': 3800.0}, 'cpu_freq_per_core': [{'current': 3658.043, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 1400.0, 'min': 1400.0, 'max': 3800.0}, {'current': 3800.0, 'min': 1400.0, 'max': 3800.0}, {'current': 4635.332, 'min': 1400.0, 'max': 3800.0}, {'current': 4642.322, 'min': 1400.0, 'max': 3800.0}, {'current': 3790.412, 'min': 1400.0, 'max': 3800.0}, {'current': 3719.735, 'min': 1400.0, 'max': 3800.0}, {'current': 3392.685, 'min': 1400.0, 'max': 3800.0}, {'current': 4008.703, 'min': 1400.0, 'max': 3800.0}], 'disk': {'total': 233.37541961669922, 'used': 69.26536560058594}, 'gpu': 'NVIDIA GeForce RTX 3070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070', 'memory_total': 8589934592}], 'memory': {'total': 15.42245101928711}}
+2023-04-24 15:31:56,450 INFO    HandlerThread:46936 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-24 15:31:56,450 INFO    HandlerThread:46936 [system_monitor.py:probe():217] Publishing system info
+2023-04-24 15:31:56,450 DEBUG   HandlerThread:46936 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-24 15:31:56,450 DEBUG   HandlerThread:46936 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-24 15:31:56,450 DEBUG   HandlerThread:46936 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-24 15:31:57,364 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/conda-environment.yaml
+2023-04-24 15:31:57,364 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/requirements.txt
+2023-04-24 15:31:57,365 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:31:57,890 DEBUG   HandlerThread:46936 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-24 15:31:57,891 INFO    HandlerThread:46936 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-24 15:31:57,892 DEBUG   SenderThread:46936 [sender.py:send():336] send: files
+2023-04-24 15:31:57,892 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-24 15:31:57,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:31:57,897 DEBUG   SenderThread:46936 [sender.py:send():336] send: telemetry
+2023-04-24 15:31:57,897 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:31:58,364 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/conda-environment.yaml
+2023-04-24 15:31:58,365 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-metadata.json
+2023-04-24 15:31:58,566 INFO    wandb-upload_0:46936 [upload_job.py:push():138] Uploaded file /tmp/tmpz9xs0pvkwandb/4edo72gf-wandb-metadata.json
+2023-04-24 15:31:59,365 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:01,365 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:01,788 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:06,788 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:10,157 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:10,734 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:11,961 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:12,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:32:12,896 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:32:13,369 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:17,135 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:19,814 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:19,814 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:32:19,814 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:32:19,816 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:32:20,299 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:20,370 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:32:22,368 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:23,371 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:27,372 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:27,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:32:27,897 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:32:28,372 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/config.yaml
+2023-04-24 15:32:28,940 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:28,941 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:32:28,941 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:32:28,943 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:32:29,373 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:32:29,414 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:31,374 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:33,455 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:38,100 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:38,101 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:32:38,101 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:32:38,103 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:32:38,376 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:32:38,592 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:38,593 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:41,377 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:42,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:32:42,896 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:32:47,145 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:47,624 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:47,897 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-24 15:32:49,359 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:32:49,359 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:32:49,359 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:49,360 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:32:49,379 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:32:51,380 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:32:54,361 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:32:56,437 DEBUG   SystemMonitor:46936 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-04-24 15:32:56,438 DEBUG   SenderThread:46936 [sender.py:send():336] send: stats
+2023-04-24 15:32:57,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:32:57,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-24 15:32:57,897 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:32:58,238 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:58,238 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:32:58,239 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:32:58,239 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:32:58,382 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:32:58,756 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:32:59,942 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:01,383 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:04,943 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:08,041 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:08,041 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:33:08,041 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:33:08,044 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:33:08,385 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:33:08,533 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:09,386 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:10,601 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:11,386 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:12,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-24 15:33:12,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:33:12,897 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:33:16,135 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:17,476 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:17,476 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:33:17,476 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:33:17,477 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:33:17,969 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:18,388 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:33:19,388 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:22,048 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:26,439 DEBUG   SenderThread:46936 [sender.py:send():336] send: stats
+2023-04-24 15:33:26,752 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:26,753 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:33:26,753 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:33:26,753 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:33:27,259 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:27,260 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:27,391 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:33:27,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-24 15:33:27,896 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-24 15:33:27,897 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: stop_status
+2023-04-24 15:33:29,392 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:33,181 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:35,986 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:35,986 DEBUG   SenderThread:46936 [sender.py:send():336] send: history
+2023-04-24 15:33:35,987 DEBUG   SenderThread:46936 [sender.py:send_request():363] send_request: summary_record
+2023-04-24 15:33:35,987 INFO    SenderThread:46936 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-24 15:33:36,394 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/wandb-summary.json
+2023-04-24 15:33:36,492 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-24 15:33:37,394 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:38,494 DEBUG   HandlerThread:46936 [handler.py:handle_request():144] handle_request: status_report
+2023-04-24 15:33:39,395 INFO    Thread-13 :46936 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/files/output.log
+2023-04-24 15:33:40,917 WARNING StreamThr :46936 [internal.py:is_dead():415] Internal process exiting, parent pid 46881 disappeared
+2023-04-24 15:33:40,917 ERROR   StreamThr :46936 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-04-24 15:33:41,495 INFO    WriterThread:46936 [datastore.py:close():298] close: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230424_153155-tv72cnbv/run-tv72cnbv.wandb
+2023-04-24 15:33:41,495 INFO    HandlerThread:46936 [handler.py:finish():842] shutting down handler
+2023-04-24 15:33:41,495 INFO    SenderThread:46936 [sender.py:finish():1504] shutting down sender
+2023-04-24 15:33:42,458 INFO    MainThread:46936 [internal.py:handle_exit():77] Internal process exited

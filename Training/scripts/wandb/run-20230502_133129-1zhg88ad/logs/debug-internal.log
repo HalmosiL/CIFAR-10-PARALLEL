@@ -1,0 +1,57 @@
+2023-05-02 13:31:29,692 INFO    StreamThr :44204 [internal.py:wandb_internal():87] W&B internal server running at pid: 44204, started at: 2023-05-02 13:31:29.691768
+2023-05-02 13:31:29,694 DEBUG   HandlerThread:44204 [handler.py:handle_request():144] handle_request: status
+2023-05-02 13:31:29,695 INFO    WriterThread:44204 [datastore.py:open_for_write():85] open: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/run-1zhg88ad.wandb
+2023-05-02 13:31:29,696 DEBUG   SenderThread:44204 [sender.py:send():336] send: header
+2023-05-02 13:31:29,696 DEBUG   SenderThread:44204 [sender.py:send():336] send: run
+2023-05-02 13:31:30,231 INFO    SenderThread:44204 [dir_watcher.py:__init__():219] watching files in: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files
+2023-05-02 13:31:30,232 INFO    SenderThread:44204 [sender.py:_start_run_threads():1078] run started: 1zhg88ad with start time 1683027089.691251
+2023-05-02 13:31:30,232 DEBUG   SenderThread:44204 [sender.py:send_request():363] send_request: summary_record
+2023-05-02 13:31:30,232 DEBUG   HandlerThread:44204 [handler.py:handle_request():144] handle_request: check_version
+2023-05-02 13:31:30,232 INFO    SenderThread:44204 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-05-02 13:31:30,232 DEBUG   SenderThread:44204 [sender.py:send_request():363] send_request: check_version
+2023-05-02 13:31:30,295 DEBUG   HandlerThread:44204 [handler.py:handle_request():144] handle_request: run_start
+2023-05-02 13:31:30,299 DEBUG   HandlerThread:44204 [system_info.py:__init__():31] System info init
+2023-05-02 13:31:30,300 DEBUG   HandlerThread:44204 [system_info.py:__init__():46] System info init done
+2023-05-02 13:31:30,300 INFO    HandlerThread:44204 [system_monitor.py:start():183] Starting system monitor
+2023-05-02 13:31:30,300 INFO    SystemMonitor:44204 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-05-02 13:31:30,300 INFO    HandlerThread:44204 [system_monitor.py:probe():204] Collecting system info
+2023-05-02 13:31:30,300 INFO    SystemMonitor:44204 [interfaces.py:start():187] Started cpu monitoring
+2023-05-02 13:31:30,301 INFO    SystemMonitor:44204 [interfaces.py:start():187] Started disk monitoring
+2023-05-02 13:31:30,301 INFO    SystemMonitor:44204 [interfaces.py:start():187] Started gpu monitoring
+2023-05-02 13:31:30,302 INFO    SystemMonitor:44204 [interfaces.py:start():187] Started memory monitoring
+2023-05-02 13:31:30,302 INFO    SystemMonitor:44204 [interfaces.py:start():187] Started network monitoring
+2023-05-02 13:31:30,310 DEBUG   HandlerThread:44204 [system_info.py:probe():195] Probing system
+2023-05-02 13:31:30,314 DEBUG   HandlerThread:44204 [git.py:repo():40] git repository is invalid
+2023-05-02 13:31:30,314 DEBUG   HandlerThread:44204 [system_info.py:probe():240] Probing system done
+2023-05-02 13:31:30,314 DEBUG   HandlerThread:44204 [system_monitor.py:probe():213] {'os': 'Linux-6.1.25-1-MANJARO-x86_64-with-glibc2.37', 'python': '3.9.0', 'heartbeatAt': '2023-05-02T11:31:30.311042', 'startedAt': '2023-05-02T11:31:29.685798', 'docker': None, 'cuda': None, 'args': ('../Configs/pgd.json',), 'state': 'running', 'program': '/home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/train.py', 'codePath': 'train.py', 'host': 'developer-systemproductname', 'username': 'developer', 'executable': '/home/developer/anaconda3/envs/pytorch/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 4099.915499999999, 'min': 1400.0, 'max': 3800.0}, 'cpu_freq_per_core': [{'current': 4345.201, 'min': 1400.0, 'max': 3800.0}, {'current': 4519.104, 'min': 1400.0, 'max': 3800.0}, {'current': 4264.843, 'min': 1400.0, 'max': 3800.0}, {'current': 3946.871, 'min': 1400.0, 'max': 3800.0}, {'current': 4519.195, 'min': 1400.0, 'max': 3800.0}, {'current': 3868.985, 'min': 1400.0, 'max': 3800.0}, {'current': 4398.199, 'min': 1400.0, 'max': 3800.0}, {'current': 3619.849, 'min': 1400.0, 'max': 3800.0}, {'current': 4511.352, 'min': 1400.0, 'max': 3800.0}, {'current': 4536.955, 'min': 1400.0, 'max': 3800.0}, {'current': 3902.125, 'min': 1400.0, 'max': 3800.0}, {'current': 3952.695, 'min': 1400.0, 'max': 3800.0}, {'current': 4493.792, 'min': 1400.0, 'max': 3800.0}, {'current': 3621.615, 'min': 1400.0, 'max': 3800.0}, {'current': 3890.504, 'min': 1400.0, 'max': 3800.0}, {'current': 3619.513, 'min': 1400.0, 'max': 3800.0}], 'disk': {'total': 233.37541961669922, 'used': 84.73059844970703}, 'gpu': 'NVIDIA GeForce RTX 3070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070', 'memory_total': 8589934592}], 'memory': {'total': 15.417495727539062}}
+2023-05-02 13:31:30,315 INFO    HandlerThread:44204 [system_monitor.py:probe():214] Finished collecting system info
+2023-05-02 13:31:30,315 INFO    HandlerThread:44204 [system_monitor.py:probe():217] Publishing system info
+2023-05-02 13:31:30,315 DEBUG   HandlerThread:44204 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-02 13:31:30,315 DEBUG   HandlerThread:44204 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-02 13:31:30,315 DEBUG   HandlerThread:44204 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-02 13:31:31,233 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/wandb-summary.json
+2023-05-02 13:31:31,233 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/requirements.txt
+2023-05-02 13:31:31,233 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/conda-environment.yaml
+2023-05-02 13:31:32,228 DEBUG   HandlerThread:44204 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-02 13:31:32,229 INFO    HandlerThread:44204 [system_monitor.py:probe():219] Finished publishing system info
+2023-05-02 13:31:32,232 DEBUG   SenderThread:44204 [sender.py:send():336] send: files
+2023-05-02 13:31:32,233 INFO    SenderThread:44204 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-05-02 13:31:32,234 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/conda-environment.yaml
+2023-05-02 13:31:32,234 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/wandb-metadata.json
+2023-05-02 13:31:32,237 DEBUG   HandlerThread:44204 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-02 13:31:32,237 DEBUG   SenderThread:44204 [sender.py:send_request():363] send_request: stop_status
+2023-05-02 13:31:32,467 DEBUG   SenderThread:44204 [sender.py:send():336] send: telemetry
+2023-05-02 13:31:32,910 INFO    wandb-upload_0:44204 [upload_job.py:push():138] Uploaded file /tmp/tmpoimg5b8fwandb/3h5tvgrf-wandb-metadata.json
+2023-05-02 13:31:34,235 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_created():278] file/dir created: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/output.log
+2023-05-02 13:31:35,566 DEBUG   HandlerThread:44204 [handler.py:handle_request():144] handle_request: status_report
+2023-05-02 13:31:36,235 INFO    Thread-13 :44204 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/files/output.log
+2023-05-02 13:31:38,306 ERROR   cpu       :44204 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=44044)
+2023-05-02 13:31:38,307 ERROR   cpu       :44204 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=44044)
+2023-05-02 13:31:38,307 ERROR   memory    :44204 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=44044)
+2023-05-02 13:31:38,307 ERROR   memory    :44204 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=44044)
+2023-05-02 13:31:38,702 WARNING StreamThr :44204 [internal.py:is_dead():415] Internal process exiting, parent pid 44044 disappeared
+2023-05-02 13:31:38,702 ERROR   StreamThr :44204 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-05-02 13:31:39,567 INFO    HandlerThread:44204 [handler.py:finish():842] shutting down handler
+2023-05-02 13:31:39,568 INFO    WriterThread:44204 [datastore.py:close():298] close: /home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/wandb/run-20230502_133129-1zhg88ad/run-1zhg88ad.wandb
+2023-05-02 13:31:39,568 INFO    SenderThread:44204 [sender.py:finish():1504] shutting down sender
+2023-05-02 13:31:40,297 INFO    MainThread:44204 [internal.py:handle_exit():77] Internal process exited

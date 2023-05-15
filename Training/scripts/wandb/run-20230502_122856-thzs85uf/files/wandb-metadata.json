@@ -1,0 +1,121 @@
+{
+    "os": "Linux-6.1.25-1-MANJARO-x86_64-with-glibc2.37",
+    "python": "3.9.0",
+    "heartbeatAt": "2023-05-02T10:28:57.055126",
+    "startedAt": "2023-05-02T10:28:56.391424",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "../Configs/pgd.json"
+    ],
+    "state": "running",
+    "program": "/home/developer/Desktop/CIFAR-10-Paralel/Training/scripts/train.py",
+    "codePath": "train.py",
+    "host": "developer-systemproductname",
+    "username": "developer",
+    "executable": "/home/developer/anaconda3/envs/pytorch/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3862.4310625000003,
+        "min": 1400.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3982.356,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4634.146,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4118.21,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4637.636,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3719.971,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4176.984,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1400.0,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4649.285,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4086.268,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4650.255,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4582.079,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4650.39,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3718.413,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3771.293,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4650.266,
+            "min": 1400.0,
+            "max": 3800.0
+        },
+        {
+            "current": 4648.532,
+            "min": 1400.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "total": 233.37541961669922,
+        "used": 83.41112899780273
+    },
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.417495727539062
+    }
+}
