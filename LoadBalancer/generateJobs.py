@@ -37,7 +37,8 @@ def generateJobs(BATCH_SIZE_TRAIN, NOM_WORKERS_TRAIN, SAVE_PATH):
             "label": label
         }
 
-        os.remove(f'{SAVE_PATH}data_{i}.pkl')
+        if os.path.exists(f'{SAVE_PATH}data_{i}.pkl'):
+            os.remove(f'{SAVE_PATH}data_{i}.pkl')
 
         with open(f'{SAVE_PATH}data_{i}.pkl', 'wb') as handle:
             pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
