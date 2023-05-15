@@ -15,7 +15,9 @@ import glob
 CONFIG = json.load(open(sys.argv[1]))
 
 MODEL_ID = None
-DEVICE = "cuda:1"
+
+DEVICE = CONFIG["DEVICE"]
+PORT = CONFIG["PORT"]
 
 def clearModelCache(model_list):
     if(len(model_list) > 2):
@@ -86,16 +88,16 @@ if __name__ == "__main__":
     clearModelCache(model_list)
 
     while True:
-        obj = load_pickle_file("http://127.0.0.1:3000/getJob")
-        id_ = getModelID("http://127.0.0.1:3000/getModelID")
+        obj = load_pickle_file(f"http://127.0.0.1:{PORT}/getJob")
+        id_ = getModelID(f"http://127.0.0.1:{PORT}/getModelID")
 
         if MODEL_ID is not None:
             if(MODEL_ID < id_):
                 MODEL_ID = id_
-                MODEL = getModel("http://127.0.0.1:3000/getModel", MODEL)
+                MODEL = getModel(f"http://127.0.0.1:{PORT}/getModel", MODEL)
         else:
             MODEL_ID = id_
-            MODEL = getModel("http://127.0.0.1:3000/getModel", MODEL)
+            MODEL = getModel(f"http://127.0.0.1:{PORT}/getModel", MODEL)
 
         if(MODEL is not None):
             MODEL = MODEL.to(DEVICE)
@@ -114,7 +116,7 @@ if __name__ == "__main__":
                         iterationNumber=10
                     )
 
-                    upload_pickle_file("http://127.0.0.1:3000/uploadJob", obj)
+                    upload_pickle_file(f"http://127.0.0.1:{PORT}/uploadJob", obj)
             else:
                 print("Finished")
         else:
