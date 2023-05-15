@@ -7,8 +7,12 @@ import torch.nn as nn
 from utils.Model import loadModel
 from utils.Adversarial import PGD
 
+import sys
+import json
 import os
 import glob
+
+CONFIG = json.load(open(sys.argv[1]))
 
 MODEL_ID = None
 DEVICE = "cuda:1"
