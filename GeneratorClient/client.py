@@ -11,7 +11,7 @@ import os
 import glob
 
 MODEL_ID = None
-DEVICE = "cuda:0"
+DEVICE = "cuda:1"
 
 def clearModelCache(model_list):
     if(len(model_list) > 2):
